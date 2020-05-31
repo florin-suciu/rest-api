@@ -125,4 +125,4 @@ def delete_movie(imdb_id):
     return Response(json.dumps(invalid_movie_error_message), status=404, mimetype='application/json')
 
 
-app.run(port=5000)
+app.run(host='0.0.0.0', port=5000)
